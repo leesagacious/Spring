@@ -1,12 +1,12 @@
-#define CHECK_PROCESS_STATE (m)\
+#define CHECK_PROCESS_STATE(M)\
 	do\
 	{\
-		long timeout = m * HZ / 1000;\
+		long timeout = M * HZ / 1000;\
 		while (timeout > 0)\
 		{\
 			timeout = schedule_timeout(timeout);\
 		}\
-	}while(0);
+	}while(0)
 	
 
 static struct task_struct * kThread = NULL;
