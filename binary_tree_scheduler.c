@@ -10,7 +10,7 @@ typedef struct _sched_tree{
 
 static struct kmem_cache * sched_tree_cache;
 
-void __init sched_tree_init_cache(void)
+int __init sched_tree_init_cache(void)
 {
 	sched_tree_cache = kmem_cache_create("sched_tree_cache",sizeof(sched_tree),0, 
                                          (SLAB_RECLAIM_ACCOUNT|SLAB_MEM_SPREAD),NULL);
