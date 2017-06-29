@@ -21,7 +21,7 @@ int __init sched_tree_init_cache(void)
     return 0;
 }
 
-int relatively(unsigned int original_node_vir_time,unsinged int new_node_prio)
+int relatively(unsigned int original_node_vir_time,unsigned int new_node_prio)
 {
     return original_node_vir_time > new_node_prio;
 }  
