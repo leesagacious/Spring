@@ -36,6 +36,8 @@ void insertSchedTree(sched_tree ** source,int ( * relatively )(unsigned int,unsi
     
     tree_node->left  = NULL;
     tree_node->right = NULL;
+    tree_node->prio  = 10;
+    tree_node->vir_time = 10;	
     
     if (*source == NULL){
         *source = tree_node;
