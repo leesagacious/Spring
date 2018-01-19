@@ -2,6 +2,7 @@ typedef struct _sched_tree{
     
     unsigned int  prio;
     unsigned long vir_time;
+    unsigned long total_run_time;	
     
     struct _sched_tree * left;
     struct _sched_tree * right;
